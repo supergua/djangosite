@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my site</title>
+</head>
+<body>
+    <table>
+        <caption>User list</caption>
+        <thead>
+            <tr>
+                <th>UserName</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in user_list %}
+            <tr>
+                <th>{{ user.username }}</th>
+                <th>{{ user.password }}</th>
+            </tr>
+        </tbody>
+            {% endfor %}
+    </table>
+</body>
+</html>
