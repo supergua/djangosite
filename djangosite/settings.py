@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'testsite.apps.TestsiteConfig',
     'polls.apps.PollsConfig',
+    'blog.apps.BlogConfig',
 )
 
 MIDDLEWARE = [
@@ -81,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test_django_db',
-        'USER': 'guagua',
-        'PASSWORD': 'hk@123456',
+        'USER': 'user',
+        'PASSWORD': '123456',
     }
 }
 
